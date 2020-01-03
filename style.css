@@ -121,7 +121,6 @@ body {
   background-attachment: fixed;
   font: 10px Arial, Helvetica, sans-serif;
   color: #f4f4f4;
-  display: grid;
 }
 
 input {
@@ -129,7 +128,9 @@ input {
 }
 
 #wrapper {
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
   width: 90rem;
   margin: 0px auto 15px auto;
   padding: 15px 0px 15px 0px;
@@ -143,7 +144,7 @@ input {
 
 .thumb img {
   padding: 5px;
-  border: 1px solid red;
+  border: 1px solid #d60a0a;
   opacity: 0.5;
   filter: alpha(opacity=50);
   -moz-opacity: 0.5;
@@ -192,16 +193,16 @@ a:active {
 *	TOP			   *
 ********************/
 #top {
-  width: 890px;
+  width: 89rem;
   margin: 0px auto;
   padding: 0px;
 }
 
 #topnav {
-  height: 34px;
+  height: 3.4rem;
   margin: 0px;
   padding: 1px 0px 0px 0px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 #topnav ul {
@@ -262,20 +263,20 @@ a:active {
   width: 140px;
   margin: 0px;
   padding: 3px 3px 3px 4px;
-  font-size: 11px;
-  color: red;
-  background: #000;
+  font-size: 1.4em;
+  color: #cf0606;
+  background: #1b1b1b;
   opacity: 0.5;
   filter: alpha(opacity=50);
   -moz-opacity: 0.5;
-  border: 1px solid red;
+  border: 3px solid #1b1b1b;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
 
 .searchsubmit {
-  background: red;
+  background: #cf0606;
   width: 32px;
   margin: 0px;
   padding: 3px 0px;
@@ -290,8 +291,8 @@ a:active {
 *	HEADER		   *
 ********************/
 #header {
-  width: 890px;
-  height: 90px;
+  width: 80.4rem;
+  height: 9rem;
   margin: 0px auto;
   display: none;
 }
@@ -322,8 +323,8 @@ a:active {
 .ad468x60 {
   float: right;
   background: #000;
-  width: 468px;
-  height: 60px;
+  width: 46.8rem;
+  height: 6rem;
   margin: 15px 0px 0px 0px;
   padding: 0px;
 }
@@ -335,8 +336,8 @@ a:active {
 .rssfeed {
   background: url(images/rss-gray.png) no-repeat;
   float: left;
-  width: 24px;
-  height: 24px;
+  width: 3rem;
+  height: 3rem;
   margin: 5px 0px 0px 0px;
   cursor: pointer;
 }
@@ -349,12 +350,11 @@ a:active {
 *	MENU		   *
 ********************/
 #menu {
-  width: 890px;
-  height: 33px;
+  width: 89rem;
+  height: 3.3rem;
   margin: 0px auto 50px auto;
   padding: 0px;
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
+  border: 3px solid red;
 }
 
 #menu ul {
@@ -376,6 +376,10 @@ a:active {
   padding: 0px;
   list-style: none;
   border-right: 1px solid red;
+}
+
+#menu ul li:last-child{
+  border-right: none;
 }
 
 #menu li a,
