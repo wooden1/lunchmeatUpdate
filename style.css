@@ -144,7 +144,7 @@ input {
 
 .thumb img {
   padding: 5px;
-  border: 1px solid #d60a0a;
+  border: 1px solid #cf0606;
   opacity: 0.5;
   filter: alpha(opacity=50);
   -moz-opacity: 0.5;
@@ -362,6 +362,7 @@ a:active {
   list-style: none;
   margin: 0px;
   padding: 0px;
+  border: 2px solid red;
 }
 
 #menu li {
@@ -954,6 +955,24 @@ img.alignleft {
   border: none;
 }
 
+.store-sidebar{
+border: 2px solid whitesmoke;
+margin: 2rem;
+float: right;
+width: 15vw;
+height: 30vh;
+background-color: blue;
+}
+
+.social-sidebar{
+  border: 2px solid whitesmoke;
+  margin: 2rem;
+  float: right;
+  width: 15vw;
+  height: 30vh;
+  background-color: blue;
+}
+
 /*******************
 *	WIDGETS		   *
 ********************/
@@ -1400,3 +1419,8 @@ span.says {
   left: -729px;
   top: -718px;
 }
+
+#wrapper{
+  display:grid;
+}
+ 
