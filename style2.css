@@ -118,7 +118,7 @@ body {
   /* background: #000 url('./images/background.jpg') no-repeat; */
  
   /* REPLACE ABOVE ELEMENT WITH: */
-  background: #121212; 
+  background: #000; 
 
   background-attachment: fixed;
   font: 12px/17px Arial, Helvetica, sans-serif;
@@ -544,7 +544,7 @@ a:active {
   margin-bottom: 20px;
   /* todo: REPLACE BELOW WITH ABOVE */
   /* margin: 0px 0px 8px -10px; */
-  font-size: 27px;
+  font-size: 29px;
   font-family: post-title_font;
   line-height: .88;
   
@@ -566,14 +566,14 @@ a:active {
   margin: 0px 0px 5px 0px;
   /* todo: ADD BELOW LINES */
   position: relative;
-  top: -20px;
+  top: -27px;
 }
 
 .post-content {
   display: table;
   /* todo: ADD BELOW LINES */
   position: relative;
-  top: -20px;
+  top: -27px;
 }
 
 /*******************
@@ -960,13 +960,17 @@ img.alignleft {
 *	SIDEBAR		   *
 ********************/
 #sidebar {
-  float: right;
+  /* float: right; */
   width: 260px;
   margin: 0px;
   padding: 0px 25px 25px 0px;
-  overflow: hidden;
-  border: 3px solid white;
+  /* overflow: hidden; */
+  /* border: 3px solid white; */
+}
+.sidebar-nav{
   position: sticky;
+  top: 0;
+  
 }
 
 .social-media{
@@ -981,8 +985,11 @@ img{
   max-width: 100%;
   height: auto;
 }
-
-
+/* todo:ADD */
+#container{
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+}
 /* todo: REMOVABLE */
 /* #sidebar> img{
   width: 200px;
@@ -1457,7 +1464,8 @@ span.says {
 }
 
 .rss {
-  background: url(images/rss-small.png) no-repeat 0px 0px;
+  background:white;
+  /* background: url(images/rss-small.png) no-repeat 0px 0px; */
   padding: 0px 0px 0px 16px;
 }
 
