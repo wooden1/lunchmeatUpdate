@@ -1,3 +1,5 @@
+text/css style.css (ASCII C program text, with CRLF line terminators)
+
 /*   
 	Theme Name: LunchMeat VHS Theme
 	Theme URI: http://www.dalecompton.com
@@ -8,14 +10,6 @@
 	Tags:  three-columns, advertise-ready, widget-ready, advanced-theme-options
 */
 /******************* Added By Dale *******************/
-.top-header {
-  /* margin: 0 auto 20px auto; */
-  /* text-align: center; */
-  width: 100%;
-} 
-.top-header img{
-width: 100vw;
-}
 
 /******************
 *	RESET		  *
@@ -44,8 +38,9 @@ blockquote,
 th,
 td {
   margin: 0px;
-  padding: 0px;
+ 
 }
+
 
 table {
   border-collapse: collapse;
@@ -119,10 +114,14 @@ acronym {
 /********************
 *	GLOBAL			*
 *********************/
-
 body {
-  background: #202020;
-  font: 10px Arial, Helvetica, sans-serif;
+  /* background: #000 url('./images/background.jpg') no-repeat; */
+ 
+  /* REPLACE ABOVE ELEMENT WITH: */
+  background: #121212; 
+
+  background-attachment: fixed;
+  font: 12px/17px Arial, Helvetica, sans-serif;
   color: #f4f4f4;
 }
 
@@ -131,10 +130,7 @@ input {
 }
 
 #wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto-fit, 1fr);
-  width: 90rem;
+  width: 941px;
   margin: 0px auto 15px auto;
   padding: 15px 0px 15px 0px;
 }
@@ -147,7 +143,7 @@ input {
 
 .thumb img {
   padding: 5px;
-  border: 1px solid #cf0606;
+  border: 1px solid red;
   opacity: 0.5;
   filter: alpha(opacity=50);
   -moz-opacity: 0.5;
@@ -196,16 +192,27 @@ a:active {
 *	TOP			   *
 ********************/
 #top {
-  width: 89rem;
+  /* width: 890px; */
   margin: 0px auto;
   padding: 0px;
 }
+/* todo: ADD TO SITE  */
+.top-header {
+  margin: 0;
 
+}
+
+.top-header>a>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* todo: ADD TO SITE  */
 #topnav {
-  height: 3.4rem;
+  height: 34px;
   margin: 0px;
   padding: 1px 0px 0px 0px;
-  font-size: 1.5rem;
+  font-size: 12px;
 }
 
 #topnav ul {
@@ -253,33 +260,47 @@ a:active {
 #topnav li ul {
   display: none;
 }
+/* todo: ADD TO SITE */
+.current_page_item{
+  position: relative;
+  left: 20px;
+}
 
+.page-item-2 {
+  position: relative;
+  left: 20px;
+}
+/* TODO: END */
 /*******************
 *	SEARCH FORM	   *
 ********************/
 #searchform {
   margin: 6px 0px 0px 0px;
   padding: 0px;
+  /* todo: ADD */
+  position: relative;
+  right: 22px;
+  /* TODO: END */
 }
 
 .searchinput {
   width: 140px;
   margin: 0px;
   padding: 3px 3px 3px 4px;
-  font-size: 1.4em;
-  color: #cf0606;
-  background: #1b1b1b;
+  font-size: 11px;
+  color: red;
+  background: #000;
   opacity: 0.5;
   filter: alpha(opacity=50);
   -moz-opacity: 0.5;
-  border: 3px solid #1b1b1b;
+  border: 1px solid red;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
 
 .searchsubmit {
-  background: #cf0606;
+  background: red;
   width: 32px;
   margin: 0px;
   padding: 3px 0px;
@@ -290,12 +311,13 @@ a:active {
   cursor: pointer;
 }
 
+
 /*******************
 *	HEADER		   *
 ********************/
 #header {
-  width: 80.4rem;
-  height: 9rem;
+  width: 890px;
+  height: 90px;
   margin: 0px auto;
   display: none;
 }
@@ -326,8 +348,8 @@ a:active {
 .ad468x60 {
   float: right;
   background: #000;
-  width: 46.8rem;
-  height: 6rem;
+  width: 468px;
+  height: 60px;
   margin: 15px 0px 0px 0px;
   padding: 0px;
 }
@@ -339,8 +361,8 @@ a:active {
 .rssfeed {
   background: url(images/rss-gray.png) no-repeat;
   float: left;
-  width: 3rem;
-  height: 3rem;
+  width: 24px;
+  height: 24px;
   margin: 5px 0px 0px 0px;
   cursor: pointer;
 }
@@ -353,11 +375,12 @@ a:active {
 *	MENU		   *
 ********************/
 #menu {
-  width: 89rem;
-  height: 3.3rem;
+  width: 890px;
+  height: 33px;
   margin: 0px auto 50px auto;
   padding: 0px;
-  border: 3px solid red;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
 }
 
 #menu ul {
@@ -365,7 +388,6 @@ a:active {
   list-style: none;
   margin: 0px;
   padding: 0px;
-  border: 2px solid red;
 }
 
 #menu li {
@@ -380,10 +402,6 @@ a:active {
   padding: 0px;
   list-style: none;
   border-right: 1px solid red;
-}
-
-#menu ul li:last-child{
-  border-right: none;
 }
 
 #menu li a,
@@ -483,6 +501,9 @@ a:active {
 .by {
   font-size: 11px;
   color: #999;
+  /* todo: ADD BELOW  */
+  position: relative;
+  top: -15px;
 }
 
 .comments {
@@ -506,19 +527,30 @@ a:active {
 }
 
 /*******************
-*	POST BOXS	   *
+*	POST BOXES	   *
 ********************/
 .postbox {
   margin: 0px 0px 20px 25px;
   padding: 0px 0px 15px 0px;
   overflow: hidden;
 }
+/* todo: ADD: */
+@font-face{
+  font-family: post-title_font;
+  src: url('./fonts/MOMCAKE-Bold.otf');
+}
 
 .postbox h2 {
-  margin: 0px 0px 8px -10px;
-  font-size: 20px;
-  line-height: 22px;
+  margin-bottom: 20px;
+  /* todo: REPLACE BELOW WITH ABOVE */
+  /* margin: 0px 0px 8px -10px; */
+  font-size: 27px;
+  font-family: post-title_font;
+  line-height: .88;
+  
+
 }
+
 .postbox h2 a:link,
 .postbox h2 a:visited {
   color: red;
@@ -532,10 +564,16 @@ a:active {
 .boxmeta {
   width: 425px;
   margin: 0px 0px 5px 0px;
+  /* todo: ADD BELOW LINES */
+  position: relative;
+  top: -20px;
 }
 
 .post-content {
   display: table;
+  /* todo: ADD BELOW LINES */
+  position: relative;
+  top: -20px;
 }
 
 /*******************
@@ -922,11 +960,33 @@ img.alignleft {
 *	SIDEBAR		   *
 ********************/
 #sidebar {
-  /* float: right; */
-  width: 260rem;
+  float: right;
+  width: 260px;
   margin: 0px;
   padding: 0px 25px 25px 0px;
   overflow: hidden;
+  border: 3px solid white;
+  position: sticky;
+}
+
+.social-media{
+  display: inline;
+}
+.social-media img{
+  /* max-width: 30%; */
+  height: 44px;
+  margin-right:10px
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* todo: REMOVABLE */
+/* #sidebar> img{
+  width: 200px;
+  height: 100px;
 }
 
 #sidebar li ul {
@@ -956,25 +1016,9 @@ img.alignleft {
 
 .ad125x125 img {
   border: none;
-}
+} */
 
-.store-sidebar{
-border: 2px solid whitesmoke;
-margin: 2rem;
-float: right;
-width: 15vw;
-height: 30vh;
-background-color: blue;
-}
-
-.social-sidebar{
-  border: 2px solid whitesmoke;
-  margin: 2rem;
-  float: right;
-  width: 15vw;
-  height: 30vh;
-  background-color: blue;
-}
+/* todo: END OF REMOVABLE */
 
 /*******************
 *	WIDGETS		   *
@@ -1422,8 +1466,3 @@ span.says {
   left: -729px;
   top: -718px;
 }
-
-#wrapper{
-  display:grid;
-}
- 
